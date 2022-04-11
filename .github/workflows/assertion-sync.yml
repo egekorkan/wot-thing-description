@@ -39,7 +39,7 @@ jobs:
         id: diff
       - name: Sync file
         if: ${{ ! steps.diff.outputs.changed }}
-        run: mv .temp/template.current.csv testing/inputs/results/template.csv && rm -rf .temp
+        run: rm -rf .temp
       - name: Push changes
         if: ${{ ! steps.diff.outputs.changed }}
         uses: EndBug/add-and-commit@v7
