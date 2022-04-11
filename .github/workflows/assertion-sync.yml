@@ -30,7 +30,7 @@ jobs:
           cp testing/inputs/results/template.csv .temp/template.current.csv
       - name: generate template.csv
       # this generates other stuff as well but we are interested in template.csv
-        run: node assertion.js
+        run: node assertions.js
       - name: Look for changes
         continue-on-error: true 
         run: |
