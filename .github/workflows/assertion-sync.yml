@@ -47,7 +47,6 @@ jobs:
           add: '["testing/inputs/results/template.csv"]'
           author_name: action_sync
           message: 'chore(testing): sync template.csv with the current assertions in the spec'
-          pull: '--rebase'
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v4
