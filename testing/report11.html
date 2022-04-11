@@ -119,7 +119,7 @@ pre.example {
     Implementation Report
   </h1>
   <p>
-    <b>Version</b>: 25 Nov 2021
+    <b>Version</b>: 11 Apr 2022
   </p>
   <p>
     <b>Editors</b>:<br>
@@ -710,6 +710,121 @@ The implementation currently supports HTTP and CoAP bindings.
     </tr>
 -->
   
+<tr id="privacy-auth-users-only" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#privacy-auth-users-only">privacy-auth-users-only</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+          Only authorized users SHOULD be provided access
+          to the Thing Description for a Thing.
+	  </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="privacy-centralized-ids" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#privacy-centralized-ids">privacy-centralized-ids</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+          TD identifiers SHOULD NOT be generated using a centralized authority.
+	  </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="privacy-distributed-ids" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#privacy-distributed-ids">privacy-distributed-ids</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+          TD identifiers SHOULD be generated using a distributed mechanism such as UUIDs
+	  that provides a high probability of uniqueness.
+	  </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="privacy-essential-metadata-only" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#privacy-essential-metadata-only">privacy-essential-metadata-only</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+	  Only the amount of
+          information needed for the level of authorization and the use case 
+	  SHOULD be provided in a TD.
+	  </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="privacy-id-metadata" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#privacy-id-metadata">privacy-id-metadata</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+	  The value of the id of a TD SHOULD NOT contain metadata
+	  describing the Thing or from the TD itself.
+	  </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="privacy-mutable-identifiers" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#privacy-mutable-identifiers">privacy-mutable-identifiers</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+          All identifiers used in a TD SHOULD be mutable,
+          and in particular there should be a mechanism to update the id
+          of a Thing when necessary.
+	  </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="privacy-td-pii" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#privacy-td-pii">privacy-td-pii</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+          A Thing Description associated with a 
+	  personal device SHOULD be treated as if it contained
+	  personally identifiable information, even if this information is not explicit.
+	  </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="privacy-temp-id-metadata" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#privacy-temp-id-metadata">privacy-temp-id-metadata</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+          Any temporary ID generated to manage TDs, for example an ID for a database 
+	  or directory service, SHOULD NOT contain metadata 
+	  describing the Thing or from the TD itself.
+	  </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
 <tr id="sec-body-name-json-pointer" class="baseassertion">
 	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#sec-body-name-json-pointer">sec-body-name-json-pointer</a></td>
 	<td class="baseassertion"></td>
@@ -765,6 +880,177 @@ The implementation currently supports HTTP and CoAP bindings.
             (or created) by a 
             body security information location
             MUST be required and of type "string".</td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="sec-inj-no-intl-markup" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#sec-inj-no-intl-markup">sec-inj-no-intl-markup</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+	      HTML markup SHOULD NOT be used for internationalization purposes in TD strings.
+	      </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="sec-inj-sanitize" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#sec-inj-sanitize">sec-inj-sanitize</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">Y</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+		      Strings sourced from TDs MUST either be sanitized using a carefully vetted HTML
+	      sanitizer that disables any markup or should be inserted into an HTML template using
+	      DOM node manipulation APIs that will escape any markup.
+	      </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="sec-vuln-auto" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#sec-vuln-auto">sec-vuln-auto</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+	      The auto security scheme MAY be used if vulnerability
+	      scanning is a concern.</td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="security-context-secure-fetch" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#security-context-secure-fetch">security-context-secure-fetch</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+	      If it is necessary to fetch a context definition file,
+	      an implementation SHOULD first attempt to use HTTP over TLS 
+	      even when only an HTTP URL is given.
+	      </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="security-jsonld-expansion" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#security-jsonld-expansion">security-jsonld-expansion</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+          Consumers SHOULD 
+	  set and enforce limits on
+	  memory usage to prevent buffer overflow and resource exhaustion
+	  during JSON-LD processing.
+          </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="security-mutual-auth-td" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#security-mutual-auth-td">security-mutual-auth-td</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+          Thing Descriptions SHOULD be obtained only through
+          mutually authenticated secure channels.
+	  </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="security-no-execution" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#security-no-execution">security-no-execution</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">Y</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+        A WoT Thing Description JSON-LD serialization MUST NOT be passed through a
+        code execution mechanism such as JavaScript's eval()
+        function to be parsed.
+	</td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="security-oauth-limits" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#security-oauth-limits">security-oauth-limits</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+	To limit the scope and duration of access to Things, tokens SHOULD
+	be used to manage access.
+	</td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="security-remote-context" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#security-remote-context">security-remote-context</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+          Constrained implementations SHOULD NOT follow links to remote contexts.
+	  </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="security-server-auth-td" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#security-server-auth-td">security-server-auth-td</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+	  In cases where the Consumer is associated
+	  with a person, e.g. browsers, TDs MAY be obtained
+	  through a channel where only the TD provider is authenticated.
+	  </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="security-static-context" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#security-static-context">security-static-context</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+          Constrained implementations SHOULD use statically managed and vetted
+          versions of their supported context extensions. 
+          </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="security-update-contexts" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#security-update-contexts">security-update-contexts</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+          Supported context extensions on constrained implementations MAY be managed
+          through secure software update mechanisms.
+	  </td>
 	<td class="baseassertion"></td>
 	<td class="result missing">0</td>
 	<td class="result missing">0</td>
@@ -979,8 +1265,8 @@ The type of the members output MUST be serialized as a JSON object.
 	</td>
 	<td class="baseassertion">
     All name-value pairs of a Map of ActionAffordance instances
-    MUST&nbsp;be serialized as members of the JSON object that results from serializing the Map;
-    the name of a pair MUST&nbsp;be serialized as a JSON string and the value of the pair, an
+    MUST be serialized as members of the JSON object that results from serializing the Map;
+    the name of a pair MUST be serialized as a JSON string and the value of the pair, an
     instance of ActionAffordance, MUST be serialized as a JSON object.
   </td>
 	<td class="baseassertion"></td>
@@ -1090,7 +1376,7 @@ Actions collected in the JSON-object based actions member MUST have unique JSON 
   in an instance of the Class Thing
   MUST be serialized as JSON arrays containing JSON objects
   as defined in 
-  and ,&nbsp;respectively.
+  and , respectively.
   </td>
 	<td class="baseassertion"></td>
 	<td class="result missing">0</td>
@@ -1217,9 +1503,9 @@ MUST be serialized as a JSON array.
 		<a target="spec" href="https://www.w3.org/TR/wot-thing-description#thing">Thing</a><br>
 	</td>
 	<td class="baseassertion">
-  The root element of a TD&nbsp;Serialization MUST&nbsp;be a JSON object that
+  The root element of a TD Serialization MUST be a JSON object that
   includes a member with the name @context and a value of type
-  string or array that equals or respectively contains http://www.w3.org/ns/td.
+  string or array that equals or respectively contains https://www.w3.org/2022/wot/td/v1.1.
   </td>
 	<td class="baseassertion"></td>
 	<td class="result baseassertion">10</td>
@@ -1278,9 +1564,10 @@ MUST be serialized as a JSON array.
 	</td>
 	<td class="baseassertion">The @context
           name-value pair MUST contain the anyURI
-          https://www.w3.org/2019/wot/td/v1 either
-          directly when of type anyURI or as first
-          element when of type Array.</td>
+          https://www.w3.org/2022/wot/td/v1.1
+          in order to identify the document as a TD 1.1 which would allow Consumers to use the newly introduced terms. When there are possibly TD 1.0 consumers the anyURI
+          https://www.w3.org/2019/wot/td/v1
+          MUST be the first entry and the https://www.w3.org/2022/wot/td/v1.1 MUST be the second entry.</td>
 	<td class="baseassertion"></td>
 	<td class="result baseassertion">10</td>
 	<td class="result baseassertion">0</td>
@@ -1314,7 +1601,7 @@ MUST be serialized as a JSON array.
 	</td>
 	<td class="baseassertion">When @context
           is an Array, the anyURI
-          https://www.w3.org/2019/wot/td/v1 MAY be followed by elements of
+          https://www.w3.org/2022/wot/td/v1.1 MAY be followed by elements of
           type anyURI or type Map in any
           order, while it is RECOMMENDED to include only one
           Map with all the name-value pairs in the
@@ -2228,8 +2515,8 @@ The type of the members subscription MUST be serialized as a JSON object.
 	</td>
 	<td class="baseassertion">
     All name-value pairs of a Map of EventAffordance instances
-    MUST&nbsp;be serialized as members of the JSON object that results from serializing the Map;
-    the name of a pair MUST&nbsp;be serialized as a JSON string and the value of the pair, an
+    MUST be serialized as members of the JSON object that results from serializing the Map;
+    the name of a pair MUST be serialized as a JSON string and the value of the pair, an
     instance of EventAffordance, MUST be serialized as a JSON object.
   </td>
 	<td class="baseassertion"></td>
@@ -2374,8 +2661,7 @@ Events collected in the JSON-object based events member MUST have unique JSON na
 	<td class="baseassertion">
 		<a target="spec" href="https://www.w3.org/TR/wot-thing-description#thing">Thing</a><br>
 	</td>
-	<td class="baseassertion">TDs MUST be encoded using UTF-8 [[!RFC3629]].
-</td>
+	<td class="baseassertion">TDs MUST be encoded using UTF-8 [[!RFC3629]].</td>
 	<td class="baseassertion">
 		<a href="#td-json-open">td-json-open</a><br>
 	</td>
@@ -2470,7 +2756,7 @@ Thing Description instances MAY contain the JSON-LD keyword @type.
 	</td>
 	<td class="baseassertion">
     All name-value pairs of a MultiLanguage Map
-    MUST&nbsp;be serialized as members of a JSON object,
+    MUST be serialized as members of a JSON object,
     where the name is a well-formed language tag as defined by [[!BCP47]]
     and the value is a human-readable string in the language indicated by the tag.
   </td>
@@ -2830,8 +3116,8 @@ The type of the members version MUST be serialized as a JSON object.
 	</td>
 	<td class="baseassertion">
     All name-value pairs of a Map of PropertyAffordance instances
-    MUST&nbsp;be serialized as members of the JSON object that results from serializing the Map;
-    the name of a pair MUST&nbsp;be serialized as a JSON string and the value of the pair, an
+    MUST be serialized as members of the JSON object that results from serializing the Map;
+    the name of a pair MUST be serialized as a JSON string and the value of the pair, an
     instance of PropertyAffordance, MUST be serialized as a JSON object.
   </td>
 	<td class="baseassertion"></td>
@@ -2989,8 +3275,8 @@ MUST be serialized as a JSON name within a Property object.
 	</td>
 	<td class="baseassertion">
     All name-value pairs of a Map of SecurityScheme instances
-    MUST&nbsp;be serialized as members of the JSON object that results from serializing the Map;
-    the name of a pair MUST&nbsp;be serialized as a JSON string and the value of the pair, an
+    MUST be serialized as members of the JSON object that results from serializing the Map;
+    the name of a pair MUST be serialized as a JSON string and the value of the pair, an
     instance of SecurityScheme, MUST be serialized as a JSON object.
   </td>
 	<td class="baseassertion">
@@ -3013,7 +3299,7 @@ MUST be serialized as a JSON name within a Property object.
   The value assigned to
   security
   in an instance of Class Thing
-  MUST&nbsp;be serialized as JSON&nbsp;string or as JSON array whose elements are JSON strings.
+  MUST be serialized as JSON string or as JSON array whose elements are JSON strings.
   </td>
 	<td class="baseassertion">
 		<a href="#td-security">td-security</a><br>
@@ -3067,12 +3353,41 @@ Other formats for bearer tokens MAY be specified in vocabulary extensions.
 	<td class="result extraassertion">0</td>
 	<td class="result extraassertion">10</td>
 	<td class="result extraassertion">10</td></tr>
+<tr id="td-security-combo-deprecation" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#td-security-combo-deprecation">td-security-combo-deprecation</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+        However, the use of an array with multiple elements to combine security schemes
+        in a security element is now deprecated, instead a ComboSecurityScheme 
+        SHOULD be used.
+    </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
 <tr id="td-security-combo-exclusive-oneof-or-allof" class="baseassertion">
 	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#td-security-combo-exclusive-oneof-or-allof">td-security-combo-exclusive-oneof-or-allof</a></td>
 	<td class="baseassertion"></td>
 	<td class="baseassertion">Y</td>
 	<td class="baseassertion"></td>
 	<td class="baseassertion">Exactly one of either oneOf or allOf MUST be included.</td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="td-security-extension" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#td-security-extension">td-security-extension</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">Y</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+      Additional security schemes MUST be Subclasses of the
+      Class SecurityScheme.
+    </td>
 	<td class="baseassertion"></td>
 	<td class="result missing">0</td>
 	<td class="result missing">0</td>
@@ -3188,19 +3503,6 @@ Other formats for bearer tokens MAY be specified in vocabulary extensions.
 	<td class="baseassertion">For the
             device flow both authorization and token
             MUST be included.</td>
-	<td class="baseassertion"></td>
-	<td class="result missing">0</td>
-	<td class="result missing">0</td>
-	<td class="result missing">0</td>
-	<td class="result missing">0</td></tr>
-<tr id="td-security-oauth2-other-flows" class="baseassertion">
-	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#td-security-oauth2-other-flows">td-security-oauth2-other-flows</a></td>
-	<td class="baseassertion"></td>
-	<td class="baseassertion">Y</td>
-	<td class="baseassertion"></td>
-	<td class="baseassertion">If an OAuth 2.0 flow other than code,
-            client or device needs to be specified an extension vocabulary
-            MUST be used.</td>
 	<td class="baseassertion"></td>
 	<td class="result missing">0</td>
 	<td class="result missing">0</td>
@@ -3417,8 +3719,8 @@ If title and titles are defined at the same time at the JSON level, title MAY be
 	</td>
 	<td class="baseassertion">
   In such a case, the URI Template variables MUST be collected
-  in the JSON-object based uriVariables member
-  with the associated (unique) variable names as JSON names.
+  in the JSON-object based uriVariables member either in the Thing level or in 
+  Interaction Affordance level with the associated (unique) variable names as JSON names.
   </td>
 	<td class="baseassertion"></td>
 	<td class="result baseassertion">3</td>
@@ -3443,22 +3745,6 @@ If title and titles are defined at the same time at the JSON level, title MAY be
 	<td class="result baseassertion">0</td>
 	<td class="result baseassertion">7</td>
 	<td class="result baseassertion">10</td></tr>
-<tr id="td-vocab---Thing" class="tabassertion">
-	<td class="tabassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#td-vocab---Thing">td-vocab---Thing</a></td>
-	<td class="tabassertion"></td>
-	<td class="tabassertion">Y</td>
-	<td class="tabassertion"></td>
-	<td class="tabassertion">: Set of named security configurations
-                (definitions only). Not actually applied unless
-                names are used in a security
-                name-value pair.
-MUST be included.
-Type: SecurityScheme or Array of SecurityScheme.</td>
-	<td class="tabassertion"></td>
-	<td class="result missing">0</td>
-	<td class="result missing">0</td>
-	<td class="result missing">0</td>
-	<td class="result missing">0</td></tr>
 <tr id="td-vocab-actions--Thing" class="tabassertion">
 	<td class="tabassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#td-vocab-actions--Thing">td-vocab-actions--Thing</a></td>
 	<td class="tabassertion">Vocabulary</td>
@@ -3504,7 +3790,7 @@ Type: AdditionalExpectedResponse or Array of AdditionalExpectedResponse.</td>
 	</td>
 	<td class="tabassertion">alg: Encoding, encryption, or digest algorithm.
 MAY be included.
-Type: string (e.g., MD5, ES256, or ES512-256).</td>
+Type: string (e.g., ES256, or ES512-256).</td>
 	<td class="tabassertion">
 		<a href="#td-vocabulary">td-vocabulary</a><br>
 	</td>
@@ -3884,6 +4170,19 @@ Type: DataSchema.</td>
 	<td class="result tabassertion">0</td>
 	<td class="result tabassertion">7</td>
 	<td class="result tabassertion">10</td></tr>
+<tr id="td-vocab-dataResponse--EventAffordance" class="tabassertion">
+	<td class="tabassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#td-vocab-dataResponse--EventAffordance">td-vocab-dataResponse--EventAffordance</a></td>
+	<td class="tabassertion"></td>
+	<td class="tabassertion">N</td>
+	<td class="tabassertion"></td>
+	<td class="tabassertion">dataResponse: Defines the data schema of the Event response messages sent by the consumer in a response to a data message.
+MAY be included.
+Type: DataSchema.</td>
+	<td class="tabassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
 <tr id="td-vocab-default--DataSchema" class="tabassertion">
 	<td class="tabassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#td-vocab-default--DataSchema">td-vocab-default--DataSchema</a></td>
 	<td class="tabassertion"></td>
@@ -3984,7 +4283,7 @@ Type: string.</td>
 	<td class="tabassertion">descriptions: Can be used to support (human-readable)
                        information in different languages. Also see MultiLanguage.
 MAY be included.
-Type: MultiLanguage.</td>
+Type: Map of MultiLanguage.</td>
 	<td class="tabassertion">
 		<a href="#td-vocabulary">td-vocabulary</a><br>
 	</td>
@@ -4003,7 +4302,7 @@ Type: MultiLanguage.</td>
 	<td class="tabassertion">descriptions: Can be used to support (human-readable)
                        information in different languages. Also see MultiLanguage.
 MAY be included.
-Type: MultiLanguage.</td>
+Type: Map of MultiLanguage.</td>
 	<td class="tabassertion">
 		<a href="#td-vocabulary">td-vocabulary</a><br>
 	</td>
@@ -4022,7 +4321,7 @@ Type: MultiLanguage.</td>
 	<td class="tabassertion">descriptions: Can be used to support (human-readable)
                        information in different languages. Also see MultiLanguage.
 MAY be included.
-Type: MultiLanguage.</td>
+Type: Map of MultiLanguage.</td>
 	<td class="tabassertion">
 		<a href="#td-vocabulary">td-vocabulary</a><br>
 	</td>
@@ -4041,7 +4340,7 @@ Type: MultiLanguage.</td>
 	<td class="tabassertion">descriptions: Can be used to support (human-readable)
                        information in different languages. Also see MultiLanguage.
 MAY be included.
-Type: MultiLanguage.</td>
+Type: Map of MultiLanguage.</td>
 	<td class="tabassertion">
 		<a href="#td-vocabulary">td-vocabulary</a><br>
 	</td>
@@ -4351,7 +4650,7 @@ Type: string.</td>
 	<td class="tabassertion">in: Specifies the location of security
             authentication information.  
 MAY be included.
-Type: string (one of header, query, body, cookie, or uri).</td>
+Type: string (one of header, query, body, cookie, uri, or auto).</td>
 	<td class="tabassertion">
 		<a href="#td-vocabulary">td-vocabulary</a><br>
 	</td>
@@ -4370,7 +4669,7 @@ Type: string (one of header, query, body, cookie, or uri).</td>
 	<td class="tabassertion">in: Specifies the location of security
             authentication information.  
 MAY be included.
-Type: string (one of header, query, body, cookie, or uri).</td>
+Type: string (one of header, query, body, cookie, uri, or auto).</td>
 	<td class="tabassertion">
 		<a href="#td-vocabulary">td-vocabulary</a><br>
 	</td>
@@ -4389,7 +4688,7 @@ Type: string (one of header, query, body, cookie, or uri).</td>
 	<td class="tabassertion">in: Specifies the location of security
             authentication information.  
 MAY be included.
-Type: string (one of header, query, body, cookie, or uri).</td>
+Type: string (one of header, query, body, cookie, uri, or auto).</td>
 	<td class="tabassertion">
 		<a href="#td-vocabulary">td-vocabulary</a><br>
 	</td>
@@ -4408,7 +4707,7 @@ Type: string (one of header, query, body, cookie, or uri).</td>
 	<td class="tabassertion">in: Specifies the location of security
             authentication information.  
 MAY be included.
-Type: string (one of header, query, body, cookie, or uri).</td>
+Type: string (one of header, query, body, cookie, uri, or auto).</td>
 	<td class="tabassertion">
 		<a href="#td-vocabulary">td-vocabulary</a><br>
 	</td>
@@ -5018,7 +5317,7 @@ Type: DataSchema.</td>
 	<td class="tabassertion"></td>
 	<td class="tabassertion">N</td>
 	<td class="tabassertion"></td>
-	<td class="tabassertion">pattern: Provides a regular expressions to express constraints of the string value. The regular expression must follow the [[ECMA-262]] dialect.
+	<td class="tabassertion">pattern: Provides a regular expression to express constraints of the string value. The regular expression must follow the [[ECMA-262]] dialect.
 MAY be included.
 Type: string.</td>
 	<td class="tabassertion"></td>
@@ -5507,6 +5806,27 @@ Type: string or Array of string.</td>
 	<td class="result tabassertion">0</td>
 	<td class="result tabassertion">0</td>
 	<td class="result tabassertion">10</td></tr>
+<tr id="td-vocab-securityDefinitions--Thing" class="tabassertion">
+	<td class="tabassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#td-vocab-securityDefinitions--Thing">td-vocab-securityDefinitions--Thing</a></td>
+	<td class="tabassertion">Vocabulary</td>
+
+	<td class="tabassertion">Y</td>
+	<td class="tabassertion">
+		<a target="spec" href="https://www.w3.org/TR/wot-thing-description#thing">Thing</a><br>
+	</td>
+	<td class="tabassertion">securityDefinitions: Set of named security configurations
+                (definitions only). Not actually applied unless
+                names are used in a security
+                name-value pair.
+MUST be included.
+Type: Map of SecurityScheme.</td>
+	<td class="tabassertion">
+		<a href="#td-vocabulary">td-vocabulary</a><br>
+	</td>
+	<td class="result tabassertion">10</td>
+	<td class="result tabassertion">0</td>
+	<td class="result tabassertion">0</td>
+	<td class="result tabassertion">10</td></tr>
 <tr id="td-vocab-sizes--Link" class="tabassertion">
 	<td class="tabassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#td-vocab-sizes--Link">td-vocab-sizes--Link</a></td>
 	<td class="tabassertion"></td>
@@ -5679,7 +5999,7 @@ Type: string.</td>
                 (e.g., display a text for UI representation in
                 different languages). Also see MultiLanguage.
 MAY be included.
-Type: MultiLanguage.</td>
+Type: Map of MultiLanguage.</td>
 	<td class="tabassertion">
 		<a href="#td-vocabulary">td-vocabulary</a><br>
 	</td>
@@ -5699,7 +6019,7 @@ Type: MultiLanguage.</td>
                 (e.g., display a text for UI representation in
                 different languages). Also see MultiLanguage.
 MAY be included.
-Type: MultiLanguage.</td>
+Type: Map of MultiLanguage.</td>
 	<td class="tabassertion">
 		<a href="#td-vocabulary">td-vocabulary</a><br>
 	</td>
@@ -5719,7 +6039,7 @@ Type: MultiLanguage.</td>
                 (e.g., display a text for UI representation in
                 different languages). Also see MultiLanguage.
 MAY be included.
-Type: MultiLanguage.</td>
+Type: Map of MultiLanguage.</td>
 	<td class="tabassertion">
 		<a href="#td-vocabulary">td-vocabulary</a><br>
 	</td>
@@ -5906,8 +6226,10 @@ Type: string.</td>
 	<td class="tabassertion">
 		<a target="spec" href="https://www.w3.org/TR/wot-thing-description#interactionaffordance">InteractionAffordance</a><br>
 	</td>
-	<td class="tabassertion">uriVariables: Define URI query template variables as collection
-                based on DataSchema declarations. The individual variables DataSchema cannot be an ObjectSchema or an ArraySchema.
+	<td class="tabassertion">uriVariables: Define URI template variables according to [[RFC6570]]  as collection
+                based on DataSchema declarations. The individual variables DataSchema cannot be an ObjectSchema or an ArraySchema. 
+                If the same variable is both declared in Thing-level uriVariablesand in Interaction Affordance level, 
+                the Interaction Affordance level variable takes precedence.
 MAY be included.
 Type: Map of DataSchema.</td>
 	<td class="tabassertion">
@@ -5917,6 +6239,24 @@ Type: Map of DataSchema.</td>
 	<td class="result tabassertion">0</td>
 	<td class="result tabassertion">7</td>
 	<td class="result tabassertion">10</td></tr>
+<tr id="td-vocab-uriVariables--Thing" class="tabassertion">
+	<td class="tabassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#td-vocab-uriVariables--Thing">td-vocab-uriVariables--Thing</a></td>
+	<td class="tabassertion"></td>
+	<td class="tabassertion">N</td>
+	<td class="tabassertion"></td>
+	<td class="tabassertion">uriVariables: Define URI template variables according to [[RFC6570]]  as collection
+                based on DataSchema declarations. The Thing level uriVariables can be used in Thing-level 
+                forms or in Interaction Affordances.
+                The individual variables DataSchema cannot be an ObjectSchema or an ArraySchema.
+                If the same variable is both declared in Thing-level uriVariables and in Interaction Affordance level,
+                 the Interaction Affordance level variable takes precedence.
+MAY be included.
+Type: Map of DataSchema.</td>
+	<td class="tabassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
 <tr id="td-vocab-version--Thing" class="tabassertion">
 	<td class="tabassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#td-vocab-version--Thing">td-vocab-version--Thing</a></td>
 	<td class="tabassertion">Vocabulary</td>
@@ -5961,7 +6301,7 @@ Type: boolean.</td>
 	<td class="baseassertion">N</td>
 	<td class="baseassertion"></td>
 	<td class="baseassertion">
-        Optional an instanceName can be provided to associate an individual name to the composed (sub-) Thing Model.
+        Optionally an instanceName MAY be provided to associate an individual name to the composed (sub-) Thing Model.
     </td>
 	<td class="baseassertion"></td>
 	<td class="result missing">0</td>
@@ -6001,8 +6341,8 @@ Type: boolean.</td>
 	<td class="baseassertion">Y</td>
 	<td class="baseassertion"></td>
 	<td class="baseassertion">
-        A Thing Model MUST use at least one links entry with "rel":"tm:extends" 
-        that targets to a Thing Model that is be extended.
+        When a Thing Model extends another Thing Model, at least one links entry with "rel":"tm:extends" 
+        that targets a Thing Model that is be extended MUST be used.
     </td>
 	<td class="baseassertion"></td>
 	<td class="result missing">0</td>
@@ -6064,15 +6404,39 @@ Type: boolean.</td>
 	<td class="result missing">0</td>
 	<td class="result missing">0</td>
 	<td class="result missing">0</td></tr>
+<tr id="tm-placeholder-replacement" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#tm-placeholder-replacement">tm-placeholder-replacement</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">Y</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+        The placeholder labeling MUST be substituted with a concrete value when TD instance is created from the Thing Model. 
+    </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
 <tr id="tm-placeholder-retyping" class="baseassertion">
 	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#tm-placeholder-retyping">tm-placeholder-retyping</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">Y</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+        If a non string-based value of a JSON name-value pair has a placeholder, the value MUST be (temporarily) typed as string. 
+    </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="tm-placeholder-usecase" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#tm-placeholder-usecase">tm-placeholder-usecase</a></td>
 	<td class="baseassertion"></td>
 	<td class="baseassertion">N</td>
 	<td class="baseassertion"></td>
 	<td class="baseassertion">
-    In the case a non string-based value of a JSON name-value pair should have a placeholder the value must be (temporary) typed 
-    as string. After replacing the placeholder, e.g. when creating a Thing Description instance, the original type can be applied with the 
-    corresponding replaced value.  
+        In a case where TD instance terms, but not their values, are known in advance, the placeholder labeling MAY be used in a Thing Model.
     </td>
 	<td class="baseassertion"></td>
 	<td class="result missing">0</td>
@@ -6082,10 +6446,10 @@ Type: boolean.</td>
 <tr id="tm-placeholder-value" class="baseassertion">
 	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#tm-placeholder-value">tm-placeholder-value</a></td>
 	<td class="baseassertion"></td>
-	<td class="baseassertion">N</td>
+	<td class="baseassertion">Y</td>
 	<td class="baseassertion"></td>
 	<td class="baseassertion">
-        Placeholder can be only applied within the value of the JSON name-value pair and the value have to be typed as JSON string. 
+        A placeholder MUST be applied within the value of the JSON name-value pair. 
     </td>
 	<td class="baseassertion"></td>
 	<td class="result missing">0</td>
@@ -6111,7 +6475,7 @@ Type: boolean.</td>
 	<td class="baseassertion">N</td>
 	<td class="baseassertion"></td>
 	<td class="baseassertion">
-            The links array can use the entry with "rel" : "type" maximum one.
+            The links array can use the entry with "rel" : "type" a maximum of once.
         </td>
 	<td class="baseassertion"></td>
 	<td class="result missing">0</td>
@@ -6132,43 +6496,27 @@ Type: boolean.</td>
 	<td class="result missing">0</td>
 	<td class="result missing">0</td>
 	<td class="result missing">0</td></tr>
-<tr id="tm-tmRef-1" class="baseassertion">
-	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#tm-tmRef-1">tm-tmRef-1</a></td>
+<tr id="tm-tmRef-overwrite-possibility" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#tm-tmRef-overwrite-possibility">tm-tmRef-overwrite-possibility</a></td>
 	<td class="baseassertion"></td>
 	<td class="baseassertion">Y</td>
 	<td class="baseassertion"></td>
 	<td class="baseassertion">
-     The tm:ref value MUST follow the pattern
-     </td>
+            If the intention is to override an existing JSON name-value pair definition from tm:ref, the same JSON name MUST be used
+            at the same level of the tm:ref declaration that provides a new value. 
+        </td>
 	<td class="baseassertion"></td>
 	<td class="result missing">0</td>
 	<td class="result missing">0</td>
 	<td class="result missing">0</td>
 	<td class="result missing">0</td></tr>
-<tr id="tm-tmRef-2" class="baseassertion">
-	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#tm-tmRef-2">tm-tmRef-2</a></td>
+<tr id="tm-tmRef-overwrite-process" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#tm-tmRef-overwrite-process">tm-tmRef-overwrite-process</a></td>
 	<td class="baseassertion"></td>
 	<td class="baseassertion">Y</td>
 	<td class="baseassertion"></td>
-	<td class="baseassertion">
-        Every time tm:ref is used, the referenced pre-definition and its dependencies 
-        (e.g., by context extension) MUST be assumed at the new defined definition.
-    </td>
-	<td class="baseassertion"></td>
-	<td class="result missing">0</td>
-	<td class="result missing">0</td>
-	<td class="result missing">0</td>
-	<td class="result missing">0</td></tr>
-<tr id="tm-tmRef-overwrite" class="baseassertion">
-	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#tm-tmRef-overwrite">tm-tmRef-overwrite</a></td>
-	<td class="baseassertion"></td>
-	<td class="baseassertion">Y</td>
-	<td class="baseassertion"></td>
-	<td class="baseassertion">
-        If it is intended to override an existing JSON name-value pair definition from tm:ref, the same JSON name MUST be used
-        at the same level of the tm:ref declearation that provides a new value. This process MUST follow the 
-        JSON Merge Patch algorithm as defined in [RFC7396] where the content of the referenced definition is patched with the new provided JSON name-value 
-        pairs.
+	<td class="baseassertion">The process to overwrite MUST follow the 
+            JSON Merge Patch algorithm as defined in [RFC7396] where the content of the referenced definition is patched with the new provided JSON name-value pairs.
        </td>
 	<td class="baseassertion"></td>
 	<td class="result missing">0</td>
@@ -6189,13 +6537,53 @@ Type: boolean.</td>
 	<td class="result missing">0</td>
 	<td class="result missing">0</td>
 	<td class="result missing">0</td></tr>
+<tr id="tm-tmRef-usecase" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#tm-tmRef-usecase">tm-tmRef-usecase</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+     For importing pieces of definitions of one or more existing Thing Models, the tm:ref term is introduced that provides the location of an existing (sub-)definition that SHOULD be reused.
+    </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="tm-tmRef1" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#tm-tmRef1">tm-tmRef1</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">Y</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+     The tm:ref value MUST follow the pattern
+     </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="tm-tmRef2" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#tm-tmRef2">tm-tmRef2</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">Y</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+        Every time tm:ref is used, the referenced pre-definition and its dependencies 
+        (e.g., by context extension) MUST be assumed at the new defined definition.
+    </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
 <tr id="tm-tmRequired" class="baseassertion">
 	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#tm-tmRequired">tm-tmRequired</a></td>
 	<td class="baseassertion"></td>
 	<td class="baseassertion">Y</td>
 	<td class="baseassertion"></td>
 	<td class="baseassertion">
-        To guarantee the implementation of particular kind of interaction models, Thing Model definitions MUST use 
+        To guarantee the implementation of particular kinds of interaction models, Thing Model definitions MUST use 
         the JSON member name tm:required. 
     </td>
 	<td class="baseassertion"></td>
@@ -6243,6 +6631,19 @@ Type: boolean.</td>
 	<td class="result missing">0</td>
 	<td class="result missing">0</td>
 	<td class="result missing">0</td>
+	<td class="result missing">0</td></tr>
+<tr id="tm-versioning" class="baseassertion">
+	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#tm-versioning">tm-versioning</a></td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">N</td>
+	<td class="baseassertion"></td>
+	<td class="baseassertion">
+            When the Thing Model definitions change over time, this SHOULD be reflected in the version container.
+            </td>
+	<td class="baseassertion"></td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
+	<td class="result missing">0</td>
 	<td class="result missing">0</td></tr></tbody>
 </table>
 
@@ -6286,8 +6687,9 @@ Type: boolean.</td>
 	</td>
 	<td class="baseassertion">
                 Every form in a WoT Thing Description MUST follow the requirements
-                of the Protocol Binding indicated by the URI scheme of its
-                href member.
+                of the Protocol Binding Template indicated by the URI scheme [[!RFC3986]] of its
+                href member as indicated by the Binding Templates specification at Creating a New Protocol Binding.
+
             </td>
 	<td class="baseassertion"></td>
 	<td class="result baseassertion">3</td>
@@ -6384,79 +6786,6 @@ given in the Thing Description of the target Thing.
 	<td class="result baseassertion">0</td>
 	<td class="result baseassertion">3</td>
 	<td class="result baseassertion">3</td></tr>
-<tr id="iana-security-alter" class="baseassertion">
-	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#iana-security-alter">iana-security-alter</a></td>
-	<td class="baseassertion">IANA</td>
-
-	<td class="baseassertion">N</td>
-	<td class="baseassertion">
-		(TD&nbsp;Consumer)<br>
-	</td>
-	<td class="baseassertion">
-          For this reason, Consumer again
-          SHOULD vet and cache remote contexts before allowing the system
-          to use it.
-          </td>
-	<td class="baseassertion"></td>
-	<td class="result missing">0</td>
-	<td class="result baseassertion">0</td>
-	<td class="result baseassertion">1</td>
-	<td class="result failed">1</td></tr>
-<tr id="iana-security-execution" class="baseassertion">
-	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#iana-security-execution">iana-security-execution</a></td>
-	<td class="baseassertion">IANA</td>
-
-	<td class="baseassertion">N</td>
-	<td class="baseassertion">
-		(TD&nbsp;Consumer)<br>
-	</td>
-	<td class="baseassertion">
-            Since WoT Thing Description is intended to be a pure data exchange format for
-            Thing metadata, the serialization SHOULD NOT be passed through a
-            code execution mechanism such as JavaScript's eval()
-            function to be parsed.
-          </td>
-	<td class="baseassertion"></td>
-	<td class="result baseassertion">1</td>
-	<td class="result baseassertion">0</td>
-	<td class="result baseassertion">0</td>
-	<td class="result failed">1</td></tr>
-<tr id="iana-security-expansion" class="baseassertion">
-	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#iana-security-expansion">iana-security-expansion</a></td>
-	<td class="baseassertion">IANA</td>
-
-	<td class="baseassertion">N</td>
-	<td class="baseassertion">
-		(TD&nbsp;Consumer)<br>
-	</td>
-	<td class="baseassertion">
-          Consumers SHOULD treat any TD metadata with due skepticism.
-          </td>
-	<td class="baseassertion"></td>
-	<td class="result baseassertion">1</td>
-	<td class="result baseassertion">0</td>
-	<td class="result baseassertion">0</td>
-	<td class="result failed">1</td></tr>
-<tr id="iana-security-remote" class="baseassertion">
-	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#iana-security-remote">iana-security-remote</a></td>
-	<td class="baseassertion">IANA</td>
-
-	<td class="baseassertion">N</td>
-	<td class="baseassertion">
-		(TD&nbsp;Consumer)<br>
-	</td>
-	<td class="baseassertion">
-          While implementations on resource-constrained devices are expected
-          to perform raw JSON processing (as opposed to JSON-LD processing),
-          implementations in general SHOULD statically cache vetted
-          versions of their supported context extensions and not to follow links
-          to remote contexts.
-          </td>
-	<td class="baseassertion"></td>
-	<td class="result baseassertion">1</td>
-	<td class="result baseassertion">0</td>
-	<td class="result baseassertion">0</td>
-	<td class="result failed">1</td></tr>
 <tr id="server-data-schema" class="baseassertion">
 	<td class="baseassertion"><a target="spec" href="https://www.w3.org/TR/wot-thing-description#server-data-schema">server-data-schema</a></td>
 	<td class="baseassertion">Behavior</td>
