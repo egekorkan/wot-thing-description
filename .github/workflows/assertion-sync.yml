@@ -34,7 +34,7 @@ jobs:
       - name: Look for changes
         continue-on-error: true 
         run: |
-          git diff --no-index --quiet testing/inputs/results/template.csv .temp/template.current.csv
+          git diff --no-index testing/inputs/results/template.csv .temp/template.current.csv
           echo "::set-output name=changed::$?"
         id: diff
       - name: Sync file
