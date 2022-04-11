@@ -40,14 +40,18 @@ jobs:
       - name: Sync file
         if: ${{ ! steps.diff.outputs.changed }}
         run: rm -rf .temp
-      - name: Push changes
+      - name: Add generated file and commit
         if: ${{ ! steps.diff.outputs.changed }}
-        uses: EndBug/add-and-commit@v7
-        with: 
-          add: '["testing/inputs/results/template.csv"]'
-          author_name: action_sync
-          message: 'chore(testing): sync template.csv with the current assertions in the spec'
+        run: |
+          git add testing/inputs/results/template.csv
+          git commit -m "chore(testing): sync template.csv with the current assertions in the spec"
+#         run: EndBug/add-and-commit@v7
+#         with: 
+#           add: '["testing/inputs/results/template.csv"]'
+#           author_name: action_sync
+#           message: 'chore(testing): sync template.csv with the current assertions in the spec'
       - name: Create Pull Request
+        if: ${{ ! steps.diff.outputs.changed }}
         id: cpr
         uses: peter-evans/create-pull-request@v4
         with:
