@@ -50,16 +50,14 @@ jobs:
           git reset
           git add testing/inputs/results/template.csv
           git commit -m "chore(testing): sync template.csv with the current assertions in the spec"
-#         run: EndBug/add-and-commit@v7
-#         with: 
-#           add: '["testing/inputs/results/template.csv"]'
-#           author_name: action_sync
-#           message: 'chore(testing): sync template.csv with the current assertions in the spec'
+
       - name: Create Pull Request
         if: ${{ ! steps.diff.outputs.changed }}
         id: cpr
         uses: peter-evans/create-pull-request@v4
         with:
+          add-paths: |
+            testing/inputs/results/template.csv
           branch: assertion-csv-sync
           delete-branch: true
           title: 'Update template.csv for testing'
