@@ -1,17 +1,14 @@
-name: 'Label Actions'
-
-# Based on https://github.com/marketplace/actions/label-actions#examples
+name: Add Label
 
 on:
   issues:
-    types: [labeled, unlabeled]
-
-permissions:
-  contents: read
-  issues: write
+    types: opened
 
 jobs:
-  action:
+  add_label:
     runs-on: ubuntu-latest
     steps:
-      - uses: dessant/label-actions@v2
+      - uses: actions/checkout@v2
+      - uses: actions-ecosystem/action-add-labels@v1
+        with:
+          labels: needs-triage
