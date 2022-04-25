@@ -1,5 +1,7 @@
 name: Add Label
 
+# based on https://github.com/actions-ecosystem/action-add-labels
+
 on:
   issues:
     types: opened
